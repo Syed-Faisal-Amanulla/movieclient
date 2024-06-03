@@ -15,7 +15,7 @@ const CreatePlay = () => {
   useEffect(() => {
     const fetchPlaylists = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/playlists/user/${userId}`);
+        const response = await axios.get(`https://movieserver-nn44.onrender.com/api/playlists/user/${userId}`);
         setPlaylists(response.data);
       } catch (error) {
         console.error('Error fetching playlists:', error);
@@ -40,7 +40,7 @@ const CreatePlay = () => {
       }
 
       // Continue with creating the playlist
-      const response = await axios.post('http://localhost:5000/api/playlists', {
+      const response = await axios.post('https://movieserver-nn44.onrender.com/api/playlists', {
         userId,
         name: playlistName,
         description,
