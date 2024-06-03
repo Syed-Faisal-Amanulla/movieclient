@@ -47,7 +47,7 @@ const Home = () => {
     // Fetch user playlists (assuming the user is logged in and you have user ID)
     const fetchPlaylists = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/playlists/user/${uid}`); // Replace USER_ID with the actual user ID
+        const response = await axios.get(`https://movieserver-nn44.onrender.com/api/playlists/user/${uid}`); // Replace USER_ID with the actual user ID
         setPlaylists(response.data);
       } catch (error) {
         console.error('Error fetching playlists', error);
@@ -89,7 +89,7 @@ const Home = () => {
       console.log('Playlist ID:', playlistId);
   
       // Make the API request
-      const response = await axios.put(`http://localhost:5000/api/playlists/${playlistId}/add-movie`, {
+      const response = await axios.put(`https://movieserver-nn44.onrender.com/api/playlists/${playlistId}/add-movie`, {
         movieId: movie.imdbID,
         title: movie.Title,
         poster: movie.Poster,
