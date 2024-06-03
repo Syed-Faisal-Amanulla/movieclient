@@ -9,7 +9,7 @@ const MyPlaylists = () => {
   useEffect(() => {
     const fetchPlaylists = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/playlists/user/${uid}`);
+        const response = await axios.get(`https://movieserver-nn44.onrender.com/api/playlists/user/${uid}`);
         const publicPlaylists = response.data.filter((playlist) => playlist.type === 'public');
 
         // Remove duplicate movie IDs
