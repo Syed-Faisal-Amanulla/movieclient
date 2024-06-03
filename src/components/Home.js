@@ -18,7 +18,7 @@ const Home = () => {
 
   const fetchMovies = async (query, page) => {
     try {
-      const response = await axios.get(`http://www.omdbapi.com/?s=${query || 'movie'}&apikey=6b7cdb35&page=${page}`);
+      const response = await axios.get(`https://www.omdbapi.com/?s=${query || 'movie'}&apikey=6b7cdb35&page=${page}`);
       const newMovies = response.data.Search || [];
       const sortedMovies = newMovies.sort((a, b) => b.Year - a.Year);
 
