@@ -1,0 +1,31 @@
+/* PlaylistPage.css */
+
+.playlist-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .playlist-details-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .playlist-name {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .playlist-description {
+    margin-bottom: 0;
+    color: black;
+  }
+  
