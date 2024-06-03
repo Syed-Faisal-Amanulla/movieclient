@@ -2,7 +2,7 @@
   padding: 2rem;
   background-color: #f5f5f5;
   min-height: 100vh;
-  background: url('C:\Users\faisa\OneDrive\Documents\react\client\src\components\bg1.png');
+ background: url('../components/bg1.png');
 }
 
 .navbar {
