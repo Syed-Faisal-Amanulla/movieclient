@@ -8,7 +8,7 @@ const MovieDetails = ({ imdbID, onClose }) => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://www.omdbapi.com/?i=${imdbID}&apikey=6b7cdb35`);
+        const response = await axios.get(`https://www.omdbapi.com/?i=${imdbID}&apikey=6b7cdb35`);
         setMovieDetails(response.data);
       } catch (error) {
         console.error('Error fetching movie details:', error);
