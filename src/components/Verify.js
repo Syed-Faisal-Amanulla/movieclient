@@ -8,7 +8,7 @@ const Verify = () => {
   useEffect(() => {
     const verifyEmail = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/auth/verify/${token}`, {
+        const response = await fetch(`https://movieserver-nn44.onrender.com/api/auth/verify/${token}`, {
           method: 'GET',
         });
 
