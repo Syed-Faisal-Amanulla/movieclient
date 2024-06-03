@@ -64,7 +64,7 @@ const MyPlaylistsPublic = () => {
       }))
     };
     const encodedData = encodeURIComponent(JSON.stringify(playlistData));
-    const sharableLink = `https://movieclient-7ibt.onrender.com/plays/?data=${encodedData}`;
+    const sharableLink = `https://movieclient-1iur.onrender.com/plays/?data=${encodedData}`;
     console.log('Sharable link:', sharableLink);
     window.open(sharableLink, '_blank');
   };
