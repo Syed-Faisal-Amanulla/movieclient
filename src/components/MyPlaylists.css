@@ -1,5 +1,5 @@
 body {
-  background: url('C:/Users/faisa/OneDrive/Documents/react/client/src/components/bg1.png');
+ background: url('../components/bg1.png');
   background-size: cover;
   margin: 0;
   padding: 0;
