@@ -15,7 +15,7 @@ const MyPlaylistsPrivate = () => {
   useEffect(() => {
     const fetchPrivatePlaylists = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/playlists/user/${uid}`);
+        const response = await axios.get(`https://movieserver-nn44.onrender.com/api/playlists/user/${uid}`);
         const playlists = response.data;
         setPrivatePlaylists(playlists.filter(playlist => playlist.type === 'private'));
       } catch (error) {
@@ -38,7 +38,7 @@ const MyPlaylistsPrivate = () => {
       const uniqueMovieIds = Array.from(new Set(movies.map((movie) => movie.movieId)));
       const movieDetails = await Promise.all(
         uniqueMovieIds.map(async (id) => {
-          const response = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=6b7cdb35`);
+          const response = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=6b7cdb35`);
           return response.data;
         })
       );
@@ -62,7 +62,7 @@ const MyPlaylistsPrivate = () => {
   const handleUpdatePlaylist = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:5000/api/playlists/${editingPlaylist._id}`, {
+      const response = await axios.put(`https://movieserver-nn44.onrender.com/api/playlists/${editingPlaylist._id}`, {
         name: updatedName,
         description: updatedDescription
       });
