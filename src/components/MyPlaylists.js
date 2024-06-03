@@ -13,7 +13,7 @@ const MyPlaylistsPublic = () => {
   useEffect(() => {
     const fetchPublicPlaylists = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/playlists/user/${userId}`);
+        const response = await axios.get(`https://movieserver-nn44.onrender.com/api/playlists/user/${userId}`);
         const playlists = response.data;
         const uniquePublicPlaylists = playlists.filter(playlist => playlist.type === 'public');
         setPublicPlaylists(uniquePublicPlaylists);
@@ -64,7 +64,7 @@ const MyPlaylistsPublic = () => {
       }))
     };
     const encodedData = encodeURIComponent(JSON.stringify(playlistData));
-    const sharableLink = `http://localhost:3000/plays/?data=${encodedData}`;
+    const sharableLink = `https://movieclient-7ibt.onrender.com/plays/?data=${encodedData}`;
     console.log('Sharable link:', sharableLink);
     window.open(sharableLink, '_blank');
   };
