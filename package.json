@@ -29,7 +29,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "https://www.omdbapi.com",
+
   "browserslist": {
     "production": [
       ">0.2%",
