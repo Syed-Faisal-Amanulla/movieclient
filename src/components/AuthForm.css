@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('C:\Users\faisa\OneDrive\Documents\react\client\src\components\bg1.png') no-repeat center center/cover;
+  background: url('../components/bg1.png');
 }
 
 .auth-form {
