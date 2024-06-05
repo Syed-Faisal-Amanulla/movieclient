@@ -1,4 +1,6 @@
 # **Deployment Link:-** https://movieclient.vercel.app
+                        https://movieclient-1iur.onrender.com
+                        
 
 # Getting Started with Create React App
 
