@@ -1,7 +1,6 @@
-# **Deployment Link:-** https://movieclient.vercel.app
-                        https://movieclient-1iur.onrender.com
+# **Deployment Link-1:-** https://movieclient.vercel.app
+# **Deployment Link-2:-** https://movieclient-1iur.onrender.com
                         
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
