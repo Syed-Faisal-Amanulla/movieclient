@@ -57,7 +57,7 @@ const PlaylistPage = () => {
       
       <div>
         {playlist.movies.map((movie, index) => (
-          <div key={index} className="mmmovie-card" style={{ width: 'calc(25% - 16px)', marginRight: '16px', marginBottom: '16px', display: 'inline-block' }}>
+          <div key={index} className="mmmovie-card" style={{ width: 'calc(75% - 16px)', marginRight: '16px', marginBottom: '16px', display: 'inline-block' }}>
             <div className="card" style={{ backgroundColor: '#fff', padding: '16px', borderRadius: '8px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', height: '350px', width: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <img src={movie.poster} alt={movie.title} style={{ width: '100%', marginBottom: '8px', height: '90%' }} />
               <p className="mmmovie-title" style={{ margin: '0', color: 'black', fontWeight: 'bold' }}>{movie.title}</p>
